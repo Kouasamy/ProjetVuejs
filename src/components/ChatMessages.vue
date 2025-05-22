@@ -6,7 +6,8 @@ const newMessage = ref("");
 const token = localStorage.getItem("token"); 
 const userId = Number(localStorage.getItem("user_id")); 
 
-//  Récupération des messages
+
+//Message récupération
 const fetchMessages = async () => { 
   try {
     const response = await fetch(`https://greenvelvet.alwaysdata.net/kwick/api/talk/list/${token}/0`);
